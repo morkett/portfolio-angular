@@ -1,0 +1,14 @@
+@import "resets";
+@import "config";
+@import "layout";
+@import "mixins";
+
+body {
+  display: flex;
+}
+
+.portfolioProjectsNav {
+  cursor: pointer;
+}
+// STYLES GO HERE //
+@import "js";
