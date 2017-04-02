@@ -1,15 +1,15 @@
-# Blank Template
+# Portfolio
 
-Blank template for new projects
+Portfolio being regenerated using AngularJs
 
 ## Included:
 
 * HTML
 * .scss (+resets)
-* external js
+* package.json with all dependencies
 
-* Gulp Automation 
+* Gulp Automation
 
 ## Authors
 
-* **David Corkett** 
+* **David Corkett**
