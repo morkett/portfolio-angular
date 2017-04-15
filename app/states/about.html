@@ -1,16 +1,46 @@
 
-<aside>
-  <h1>About</h1>
-    <ul>
-      <li><a href="#info">Information</a></li>
-      <span>&#8226;</span>
-      <li><a href="#skills">Skills</a></li>
-    </ul>
-</aside>
 
-<section>
-  <h2 class="about-title">Information</h2>
-</section>
-<section>
-  <h2 class="about-title">Skills</h2>
-</section>
+<md-sidebar id="sideBar"  flex="33" flex-xs="100">
+    <h1>About</h1>
+    <ul>
+      <li><a>Information</a></li>
+      <span>&#8226;</span>
+      <li><a>Skills</a></li>
+    </ul>
+</md-sidebar>
+
+
+<md-content id="content" flex="66" flex-xs="100">
+
+  <section class="about">
+    <h2>i am a self-taught <br/>front-end web developer <br/>from london</h2>
+            <p>
+              I have experience of creating responsive interactive websites by hand-coding HTML, CSS, and JQuery. I am passionate about design and alongside my technical ability, I can create innovative interfaces which allow ease of usability. I follow many online
+            blogs and front-end news sites to keep updated with current standards and new developments in an ever-changing field. Teaching myself to code while working full-time has required me to be proactive, a fast learner, and efficient
+            in my methods of execution.</p>
+  </section>
+  <section class="about">
+    <h2>Skills</h2>
+    <div class="dev-container">
+            <h3>development</h3>
+            <div class="container-icon-skills">
+              <span class="icon-skills icon-skills-css">css3</span>
+              <span class="icon-skills icon-skills-html">html</span>
+              <span class="icon-skills icon-skills-js">JS</span>
+              <span class="icon-skills icon-skills-jquery">jQuery</span>
+              <span class="icon-skills icon-skills-scss">scss</span>
+            </div>
+            <p>These languages create the bones of the website, dictate appearance, and manipulate behavior, bringing the website to life. Coupled with version control this allows consistency in user experience. </p>
+          </div>
+
+          <div class="design-container">
+            <h3>design</h3>
+            <div class="container-icon-skills">
+              <span class="icon-skills icon-skills-ps">ps</span>
+              <span class="icon-skills icon-skills-ai">ai</span>
+          </div>
+            <p>These tools complement the development of websites by allowing image manipulation, creating website layouts and designing online resources such as SVGs.</p>
+          </div>
+  </section>
+
+</md-content>

@@ -1,22 +1,16 @@
-main {
-  position: relative;
-  overflow-x: hidden;
+// main {
+//   position: relative;
+//   overflow-x: hidden;
+// }
+
+#sideBar {
+  background: $sideBar-bg--color;
 }
 
-aside {
-  height: 100vh;
-  width: 30vw;
-  left: 0;
-  border: $border-dev-red;
-  position: fixed;
-  background: $aside-bg--color;
+#content {
+  background: $content-bg-color;
 }
 
 section {
-  height: 100vh;
-  width: 70vw;
-  margin-left: 30vw;
-  position: relative;
-  border: $border-dev-blue;
-  background: $section-bg-color;
+  min-height: 100vh;
 }

@@ -18,10 +18,10 @@ function MainRouter ($stateProvider, $urlRouterProvider) {
 
 
 
-  $urlRouterProvider.otherwise('/home');
+  $urlRouterProvider.otherwise('/portfolio');
 }
 
 
 angular
-.module('PortfolioApp', ['ui.router'])
+.module('PortfolioApp', ['ui.router','ngMaterial'])
 .config(MainRouter);

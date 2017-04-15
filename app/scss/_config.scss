@@ -3,7 +3,11 @@ $border-dev-blue: 1px solid #0288D1;
 $border-dev-green: 1px solid #00C853;
 
 //COLORS
-$white: #e3e3e3;;
+$white: #e3e3e3;
+$black: rgba(41, 41, 41, .8);
 
-$aside-bg--color: radial-gradient(ellipse at center,#e3e3e3 0,#bdbdbd 100%);
-$section-bg-color: $white;
+$sideBar-bg--color: radial-gradient(ellipse at center,#e3e3e3 0,#bdbdbd 100%);
+$content-bg-color: $white;
+
+//Fonts
+$font-family: 'Source Sans Pro', sans-serif;

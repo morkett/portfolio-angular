@@ -1,31 +1,20 @@
-
-<aside>
+<md-sidebar id="sideBar"  flex="33" flex-xs="100">
   <h1>Portfolio</h1>
           <ul class="portfolioProjectsNav">
-            <li><a ng-click="port.scrollTo('heart')">beating heart</a></li>
+            <li ng-repeat="project in port.portfolioData">
+            <a ng-click="port.scrollTo(project.anchor)">{{project.title}}</a>
             <span>&#8226;</span>
-            <li><a ng-click="port.scrollTo('clocks')">realtime clock</a></li>
-            <span>&#8226;</span>
-            <li><a ng-click="port.scrollTo('todo')">todo list</a></li>
-            <span>&#8226;</span>
-            <li><a ng-click="port.scrollTo('game')">game</a></li>
-            <span>&#8226;</span>
-            <li><a ng-click="port.scrollTo('d2e')">down to earth</a></li>
+            </li>
           </ul>
-</aside>
+</md-sidebar>
 
-<section>
-  <h2 class="portfolio-title" id="heart">Beating Heart</h2>
+
+<md-content id="content" flex="66" flex-xs="100">
+
+<section ng-repeat="project in port.portfolioData" id="{{project.anchor}}">
+  <h2 class="portfolio-title" id="heart">{{project.title}}</h2>
+  <p>view project</p>
+  <img src="../images/{{project.img}}" alt="{{project.title}}">
 </section>
-<section>
-  <h2 class="portfolio-title" id="clocks">Realtime Clock</h2>
-</section>
-<section>
-  <h2 class="portfolio-title" id="todo">Todo List</h2>
-</section>
-<section id="game">
-  <h2 class="portfolio-title">Game</h2>
-</section>
-<section>
-  <h2 class="portfolio-title" id="d2e">Down To Earth</h2>
-</section>
+
+</md-content>
