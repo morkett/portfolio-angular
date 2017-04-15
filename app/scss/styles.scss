@@ -3,9 +3,13 @@
 @import "layout";
 @import "mixins";
 
-// body {
-//   display: flex;
-// }
+// TODO:
+// TODO:
+// TODO:
+// TODO: CHANGE FLEX IN SCSSS TO HTML: https://material.angularjs.org/1.0.5/layout/options 
+// TODO:
+// TODO:
+// TODO:
 
 .portfolioProjectsNav {
   cursor: pointer;
@@ -102,6 +106,7 @@ section {
 
 //sideBar
 #sideBar {
+  overflow: hidden;
   @include flex;
   font-size: 1.4em;
     letter-spacing: 0.2em;
