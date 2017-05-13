@@ -5,11 +5,13 @@
 
 #sideBar {
   background: $sideBar-bg--color;
+  animation: $ani-fadeIn;
 }
 
 #content {
   background: $content-bg-color;
-  overflow-y:scroll; 
+  animation: $ani-fadeIn;
+  overflow-y:scroll;
 }
 
 section {
