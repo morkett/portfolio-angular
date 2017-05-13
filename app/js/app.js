@@ -18,6 +18,15 @@ function MainRouter ($stateProvider, $urlRouterProvider) {
         'main-content@portfolio': {templateUrl: '/states/partials/portfolio/main/main.html'}
       }
     })
+    .state('portfolio-heart', {
+      url: '/portfolio/beating-heart',
+      views: {
+        '': {templateUrl: '/states/template.html'},
+        'aside@portfolio-heart': {templateUrl: '/states/partials/portfolio/heart/aside.html'},
+
+        'main-content@portfolio-heart': {templateUrl: '/states/partials/portfolio/heart/main.html'}
+      }
+    })
     .state('about', {
       url: '/about',
       views: {
