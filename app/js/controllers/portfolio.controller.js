@@ -25,6 +25,11 @@ function PortfolioController($scope, $location, $anchorScroll, $mdSidenav, $log)
       anchor: 'game'
     },
     {
+      title: 'Record Player',
+      img: 'beating-heart_wv0qzi_c_scale,w_626.png',
+      anchor: 'record'
+    },
+    {
       title: 'Down To Earth',
       img: 'Devices-Mockup_aon0qz_c_scale,w_546.png',
       anchor: 'd2e'
