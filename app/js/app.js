@@ -27,6 +27,15 @@ function MainRouter ($stateProvider, $urlRouterProvider) {
         'main-content@portfolio-beating-heart': {templateUrl: '/states/partials/portfolio/heart/heart.html'}
       }
     })
+    .state('portfolio-realtime-clock', {
+      url: '/portfolio/realtime-clock',
+      views: {
+        '': {templateUrl: '/states/template.html'},
+        'aside@portfolio-realtime-clock': {templateUrl: '/states/partials/portfolio/clock/aside.html'},
+
+        'main-content@portfolio-realtime-clock': {templateUrl: '/states/partials/portfolio/clock/clock.html'}
+      }
+    })
     .state('about', {
       url: '/about',
       views: {
