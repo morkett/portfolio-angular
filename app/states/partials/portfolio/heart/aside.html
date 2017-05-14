@@ -1,13 +1,13 @@
-<a class="icon-links icon-arrow-back icon-arrow-back-heart"></a>
+<a class="" ui-sref="portfolio">back</a>
 <h1>{{port.portfolioData[0].title}}</h1>
-<ul class="port-list" ng-repeat="tags in port.portfolioData[0].tags track by $index">
-  <li >{{tags}}</li>
-  <li> &#8226;</li>
-</ul>
-<!-- <p class="port-desc">
+<ul class="port-list" >
+  <li ng-repeat="tags in port.portfolioData[0].tags track by $index">{{tags}} <span class="dot">&#8226;</span></li>
 
-    <span class=" sml-screen-info ">for the best experience view on a larger screen</span>
-</p> -->
+</ul>
+<p class="port-desc">
+ {{port.portfolioData[0].desc}}
+    <!-- <span class=" sml-screen-info ">for the best experience view on a larger screen</span> -->
+</p>
 
 <!-- <div class="icon-container">
   <div class="inner-box replay">

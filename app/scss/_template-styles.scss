@@ -1,0 +1,40 @@
+// main {
+//   position: relative;
+//   overflow-x: hidden;
+// }
+
+.sideBar {
+  background: $sideBar-bg--color;
+  animation: $ani-fadeIn;
+
+  overflow: hidden;
+  @include flex;
+  font-size: 1.4em;
+    letter-spacing: 0.2em;
+    line-height: 1;
+    text-align: center;
+    h1 {
+      margin-bottom: 20px;
+    }
+  li {
+    display: block;
+    text-align: center;
+    font-size: 0.5em;
+    letter-spacing: 0.2em;
+    line-height: 1;
+    margin: 5px 0;
+  }
+  span {
+    display: block;
+    font-size: 1.2em;
+  }
+  li:last-of-type span {
+    display: none;
+  }
+}
+
+.content {
+  background: $content-bg-color;
+  animation: $ani-fadeIn;
+  overflow-y:scroll;
+}

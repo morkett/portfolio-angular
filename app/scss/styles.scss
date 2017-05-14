@@ -1,7 +1,8 @@
 @import "resets";
 @import "config";
-@import "layout";
 @import "mixins";
+@import "template-styles";
+@import "portfolio";
 
 // TODO:
 // TODO:
@@ -23,145 +24,63 @@ body {
   overflow-x: hidden;
 }
 
-//SECTION - PORT
-section {
-  // border: $border-dev-green;
-  position: relative;
-  @include flex;
-  color: $black;
-  overflow-x: hidden;
 
-  img {
-    height: 95vh;
-  }
-  h2 {
-    position: absolute;
-  left: 50%;
-  top: 50%;
-  font-size: 1.7em;
-    letter-spacing: 0.2em;
-    line-height: 1;
-    background: $white;
-    width: 100%;
-    text-align: center;
-    padding: 5px 0;
 
-  transform: translate(-50%, -50%);
-  }
-  p {
-    position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-
-  font-size: 1em;
-    letter-spacing: 0.2em;
-    line-height: 1;
-    background: $white;
-    width: 100%;
-    text-align: center;
-    padding: 5px 0;
-    margin-top: 35px;
-    cursor: pointer;
-  }
-}
-
-.port-list {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#d2e img {
-  height: 60vh;
-}
 
 //SECTION - ABOUT
+//
+// .about {
+//   h2{
+//     transform: translate(0, 0);
+//     top: 0;
+//     left: 0;
+//     position: relative;
+//
+//     padding: 36px 0 30px 0;
+//     font-size: 1.4em;
+//     letter-spacing: 0.2em;
+//     line-height: 1.2em;
+//     text-align: center;
+//
+//     cursor: default;
+//   }
+//   p {
+//     position: relative;
+//     top: 0;
+//     left: 0;
+//     transform: translate(0,0);
+//     padding: 0 10%;
+//     text-align: justify;
+//     font-size: 1em;
+//     letter-spacing: 0.15em;
+//     line-height: 1.7em;
+//     cursor: default;
+//   }
+// }
 
-.about {
-  h2{
-    transform: translate(0, 0);
-    top: 0;
-    left: 0;
-    position: relative;
-
-    padding: 36px 0 30px 0;
-    font-size: 1.4em;
-    letter-spacing: 0.2em;
-    line-height: 1.2em;
-    text-align: center;
-
-    cursor: default;
-  }
-  p {
-    position: relative;
-    top: 0;
-    left: 0;
-    transform: translate(0,0);
-    padding: 0 10%;
-    text-align: justify;
-    font-size: 1em;
-    letter-spacing: 0.15em;
-    line-height: 1.7em;
-    cursor: default;
-  }
-}
-
-
-
-//sideBar
-#sideBar {
-  overflow: hidden;
-  @include flex;
-  font-size: 1.4em;
-    letter-spacing: 0.2em;
-    line-height: 1;
-    text-align: center;
-    h1 {
-      margin-bottom: 20px;
-    }
-  li {
-    display: block;
-    text-align: center;
-    font-size: 0.5em;
-    letter-spacing: 0.2em;
-    line-height: 1;
-    margin: 5px 0;
-  }
-  span {
-    display: block;
-    font-size: 1.2em;
-  }
-  li:last-of-type span {
-    display: none;
-  }
-}
-
-.dev-container, .design-container {
-  @include flex;
-}
-
-.container-icon-skills {
-  @include flex($direction: row);
-}
-
-.icon-skills {
-  border: 1px solid #292929;
-width: 70px;
-height: 70px;
-text-align: center;
-margin: 20px;
-display: -ms-flexbox;
-display: flex;
--ms-flex-pack: center;
-justify-content: center;
--ms-flex-align: center;
-align-items: center;
--ms-flex-direction: column;
-flex-direction: column;
-top: 0;
-left: 0;
-}
-
-// STYLES GO HERE //
-@import "js";
+// .dev-container, .design-container {
+//   @include flex;
+// }
+//
+// .container-icon-skills {
+//   @include flex($direction: row);
+// }
+//
+// .icon-skills {
+//   border: 1px solid #292929;
+// width: 70px;
+// height: 70px;
+// text-align: center;
+// margin: 20px;
+// display: -ms-flexbox;
+// display: flex;
+// -ms-flex-pack: center;
+// justify-content: center;
+// -ms-flex-align: center;
+// align-items: center;
+// -ms-flex-direction: column;
+// flex-direction: column;
+// top: 0;
+// left: 0;
+// }
+// @import "styles-heart";

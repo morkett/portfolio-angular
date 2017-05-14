@@ -1,0 +1,74 @@
+//SECTION - PORT
+section {
+  min-height: 100vh;
+  // border: $border-dev-green;
+  position: relative;
+  @include flex;
+  color: $black;
+  overflow-x: hidden;
+
+  img {
+    height: 95vh;
+  }
+  h2 {
+    position: absolute;
+  left: 50%;
+  top: 50%;
+  font-size: 1.7em;
+    letter-spacing: 0.2em;
+    line-height: 1;
+    background: $white;
+    width: 100%;
+    text-align: center;
+    padding: 5px 0;
+
+  transform: translate(-50%, -50%);
+  }
+  p {
+    position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  font-size: 1em;
+    letter-spacing: 0.2em;
+    line-height: 1;
+    background: $white;
+    width: 100%;
+    text-align: center;
+    padding: 5px 0;
+    margin-top: 35px;
+    cursor: pointer;
+  }
+}
+
+// PORTFOLIO
+.port-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .dot{
+  display: inline;
+  }
+
+  li:last-of-type span:last-of-type {
+    display: inline-block;
+    color: transparent;
+    width: 0;
+  }
+
+}
+
+
+.port-desc {
+  font-size: .6em;
+  padding: 10%;
+    letter-spacing: .15em;
+    line-height: 1.5;
+    text-align: justify;
+    // text-transform: capitalize;
+}
+
+#d2e img {
+  height: 60vh;
+}
