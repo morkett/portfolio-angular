@@ -36,6 +36,24 @@ function MainRouter ($stateProvider, $urlRouterProvider) {
         'main-content@portfolio-realtime-clock': {templateUrl: '/states/partials/portfolio/clock/clock.html'}
       }
     })
+    .state('portfolio-d2e', {
+      url: '/portfolio/down-to-earth',
+      views: {
+        '': {templateUrl: '/states/template.html'},
+        'aside@portfolio-d2e': {templateUrl: '/states/partials/portfolio/d2e/aside.html'},
+
+        'main-content@portfolio-d2e': {templateUrl: '/states/partials/portfolio/d2e/d2e.html'}
+      }
+    })
+    .state('portfolio-record-player', {
+      url: '/portfolio/record-player',
+      views: {
+        '': {templateUrl: '/states/template.html'},
+        'aside@portfolio-record-player': {templateUrl: '/states/partials/portfolio/record-player/aside.html'},
+
+        'main-content@portfolio-record-player': {templateUrl: '/states/partials/portfolio/record-player/record-player.html'}
+      }
+    })
     .state('about', {
       url: '/about',
       views: {

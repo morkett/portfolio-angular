@@ -37,16 +37,23 @@ function PortfolioController($scope, $location, $anchorScroll, $state){
     },
     {
       title: 'Record Player',
-      img: 'beating-heart_wv0qzi_c_scale,w_626.png',
-      anchor: 'record'
+      img: 'recordplayer.png',
+      anchor: 'record-player',
+      tags: ['Music Player', 'JS', 'Animation'],
+      desc: 'this project was created using html, css, js and jquery. css animations were used to transition any movements, it utilises js, jquery to create a working record player.',
+      codepen: 'https://codepen.io/morkett/full/oBdadK/',
+      github: 'https://github.com/morkett/Record-Player'
     },
     {
       title: 'Down To Earth',
-      img: 'Devices-Mockup_aon0qz_c_scale,w_546.png',
-      anchor: 'd2e'
+      img: 'BROWSER-MOCKUP.png',
+      anchor: 'd2e',
+      tags: ['Responsive', 'Website'],
+      desc: 'designed to brief in adobe photoshop, this website reflects the cafes atmosphere and ethos. this website was hand-coded to create a responsive interface, enhanced with the inclusion of css animations and creating behaviours through jquery.',
+      site: 'site'
     }
   ];
-  
+
   function init() {
 
   }
