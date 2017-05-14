@@ -54,6 +54,15 @@ function MainRouter ($stateProvider, $urlRouterProvider) {
         'main-content@portfolio-record-player': {templateUrl: '/states/partials/portfolio/record-player/record.html'}
       }
     })
+    .state('portfolio-game', {
+      url: '/portfolio/game',
+      views: {
+        '': {templateUrl: '/states/template.html'},
+        'aside@portfolio-game': {templateUrl: '/states/partials/portfolio/game/aside.html'},
+
+        'main-content@portfolio-game': {templateUrl: '/states/partials/portfolio/game/game.html'}
+      }
+    })
     .state('about', {
       url: '/about',
       views: {
