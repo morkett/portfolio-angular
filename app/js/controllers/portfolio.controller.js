@@ -39,8 +39,8 @@ function PortfolioController($scope, $location, $anchorScroll, $state){
       title: 'Record Player',
       img: 'recordplayer.png',
       anchor: 'record-player',
-      tags: ['Music Player', 'JS', 'Animation'],
-      desc: 'this project was created using html, css, js and jquery. css animations were used to transition any movements, it utilises js, jquery to create a working record player.',
+      tags: ['Music Player','AngularJs', 'JS', 'Animation'],
+      desc: 'this project is a prototype of a working record player and was originally created using html, css, js and jquery. css animations were used to transition any movements. The project was refactored to work using angular resulting in jquery being  removed from the code.',
       codepen: 'https://codepen.io/morkett/full/oBdadK/',
       github: 'https://github.com/morkett/Record-Player'
     },
