@@ -1,24 +1,27 @@
+<head>
+  <link rel="stylesheet" href="/css/styles-clock.css">
+</head>
 
-  <head>
-      <!--build:css css/styles.min.css-->
-      <link type="text/css" rel="stylesheet" href="css/styles-clocks.css" />
-      <!--endbuild-->
-  </head>
-    <div class="wrap">
-      <div class="clock">
-        <div class="hour-hand" >
-          <img src="images/hour-hand.png" id="js-hours" />
-        </div>
-        <div class="min-hand" >
-          <img src="images/min-hand.png" id="js-minutes"/>
-        </div>
-        <div class="sec-hand">
-          <img src="images/second-hand.png" id="js-seconds"/>
-        </div>
-
-        <div class="shadow-clock"></div>
-
-
+<div class="wrap" ng-controller="ClockController as clock">
+  <div class="clock">
+    <div class="hour-hand" >
+      <img src="images/hour-hand.png" ng-style="clock.hoursHandStyle" id="js-hours" />
+    </div>
+    <div class="min-hand" >
+      <img src="images/min-hand.png" ng-style="clock.minutesHandStyle" id="js-minutes"/>
+    </div>
+    <div class="sec-hand">
+      <img src="images/second-hand.png" ng-style="clock.secondsHandStyle" id="js-seconds"/>
     </div>
 
-  </div>
+    <div class="shadow-clock"></div>
+
+    <audio src="sounds/clock-ticking.mp3"  autoplay loop class="audio" id="audio" ng-if="clock.startSound"></audio>
+    <span ng-if="clock.startSound"
+      ng-click="clock.toggleStart()"
+    class="icon-clock icon-volume-high"></span>
+    <span ng-if="!clock.startSound" class="icon-clock icon-volume-mute" ng-click="clock.toggleStart()"></span>
+
+</div>
+
+</div>

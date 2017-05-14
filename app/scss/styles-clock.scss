@@ -1,0 +1,126 @@
+.wrap {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+
+  @media only screen and (max-width: 500px) {
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+}
+
+.clock {
+  height: 500px;
+  width: 500px;
+  background: url(../images/clock-no-shadow-min.png) center center no-repeat;
+  background-size: contain;
+  z-index: 100;
+  transform: translateY(70px);
+
+  // border: 1px solid blue;
+}
+
+.shadow-clock {
+  top: 0;
+  left: 0;
+  background: url(../images/shadow.png) center bottom no-repeat;
+  background-size: contain;
+  transform: translateY(10px) translateX(-50px);
+  width: 600px;
+  height: 500px;
+}
+
+.hour-hand, .min-hand, .sec-hand {
+  position: absolute;
+  height: 500px;
+  width: 500px;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 20px;
+}
+
+.hour-hand {
+  display: flex;
+  transform-origin: center;
+  margin-top: -20px;
+
+  img {
+    width: 11px;
+    height: 80px;
+    left: 241px;
+    top: 234px;
+    transform-origin: bottom center;
+    position: absolute;
+  }
+}
+
+.min-hand {
+  display: flex;
+  margin-top: -20px;
+
+  // border: 1px solid red;
+
+  img {
+    width: 11px;
+    height: 100px;
+    left: 241px;
+    top: 215px;
+    position: absolute;
+    transform-origin: bottom center;
+  }
+}
+
+.sec-hand {
+  z-index: 0;
+  display: flex;
+  transform-origin: center;
+  margin-top: -20px;
+
+  img {
+    width: 5px;
+    height: 120px;
+    left: 245px;
+    top: 195px;
+    transform-origin: bottom center;
+    position: absolute;
+  }
+}
+
+.icon-clock {
+  display: block;
+  background-repeat: no-repeat;
+  background-image: url(../images/sprite-clock.svg);
+  width: 34px;
+  height: 32px;
+  padding: 20px;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  cursor: pointer;
+  z-index: 999;
+}
+
+.icon-volume-high {
+  width: 34px;
+  height: 32px;
+  background-position: 0 0;
+  cursor: pointer;
+}
+
+.icon-volume-mute {
+  width: 32px;
+  height: 32px;
+  background-position: -48px 0;
+}
+
+* {
+  outline: none;
+    border: 0;
+}

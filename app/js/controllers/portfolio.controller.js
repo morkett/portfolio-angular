@@ -26,7 +26,7 @@ function PortfolioController($scope, $location, $anchorScroll, $state){
       img: 'clock-3_fdlcsg_c_scale,w_941.png',
       anchor: 'realtime-clock',
       tags: ['Realtime Clock', 'JS', 'Animation'],
-      desc: 'this project was created using html, css, js and jquery. css animations were used to transition any movements, it utilises js, jquery to create a working clock based on the users local time. this project has been used as a tutorial tool for teaching new students.',
+      desc: 'this project was originally created using html, css, js and jquery. css animations were used to transition any movements, it utilised js, jquery to create a working clock based on the users local time. The project was rewritten in angular and has been used as a tutorial tool for teaching new students.',
       codepen: 'https://codepen.io/morkett/full/GrgYpK/',
       github: 'https://github.com/morkett/Realtime-Clock'
     },
