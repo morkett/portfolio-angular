@@ -51,7 +51,7 @@ function MainRouter ($stateProvider, $urlRouterProvider) {
         '': {templateUrl: '/states/template.html'},
         'aside@portfolio-record-player': {templateUrl: '/states/partials/portfolio/record-player/aside.html'},
 
-        'main-content@portfolio-record-player': {templateUrl: '/states/partials/portfolio/record-player/record-player.html'}
+        'main-content@portfolio-record-player': {templateUrl: '/states/partials/portfolio/record-player/record.html'}
       }
     })
     .state('about', {

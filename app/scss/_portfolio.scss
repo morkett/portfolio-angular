@@ -50,7 +50,6 @@ section {
   .dot{
   display: inline;
   }
-
   li:last-of-type span:last-of-type {
     display: inline-block;
     color: transparent;
@@ -66,7 +65,13 @@ section {
     letter-spacing: .15em;
     line-height: 1.5;
     text-align: justify;
-    // text-transform: capitalize;
+
+    span {
+      font-size: .9em;
+      display: block;
+      text-align: center;
+      margin-top: 10px;
+    }
 }
 
 #d2e img {
