@@ -1,0 +1,7 @@
+<h1>Portfolio</h1>
+        <ul class="portfolioProjectsNav">
+          <li ng-repeat="project in port.portfolioData">
+          <a ng-click="port.scrollTo(project.anchor)">{{project.title}}</a>
+          <span>&#8226;</span>
+          </li>
+        </ul>

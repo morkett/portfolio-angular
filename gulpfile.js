@@ -31,7 +31,7 @@ gulp.task('browserSync', function() {
 gulp.task('watch', ['browserSync', 'sass'], function (){
   gulp.watch('app/scss/**/*.scss', ['sass']);
   // reload browser when HTML or JS files changed
-  gulp.watch('app/*html', browserSync.reload);
+  gulp.watch('app/**/*html', browserSync.reload);
   gulp.watch('app/js/**/*.js', browserSync.reload);
 });
 
@@ -43,10 +43,14 @@ var useref = require('gulp-useref');
 var cssnano = require('gulp-cssnano');
 var uglify = require('gulp-uglify');
 var gulpIf = require('gulp-if');
+var babel = require('gulp-babel');
+
 
 gulp.task('useref', function(){
   return gulp.src('app/*.html')
     .pipe(useref())
+
+    .pipe(gulpIf('*.js', babel({ presets: ['es2015']})))
     .pipe(gulpIf('*.js', uglify()))
     // Minifies only if it's a CSS file
     .pipe(gulpIf('*.css', cssnano()))

@@ -12,7 +12,9 @@ function PortfolioController($scope, $location, $anchorScroll, $mdSidenav, $log)
     {
       title: 'Beating Heart',
       img: 'beating-heart_wv0qzi_c_scale,w_626.png',
-      anchor: 'beating-heart'
+      anchor: 'beating-heart',
+      tags: ['Low-Poly','SVG','Animation'],
+      desc: 'Beating Heart was created in illustrator. This low-poly animation is made up of hundreds of svg elements animated using CSS only to create the illusion of a beating heart.'
     },
     {
       title: 'Realtime Clock',
@@ -23,6 +25,11 @@ function PortfolioController($scope, $location, $anchorScroll, $mdSidenav, $log)
       title: 'Space Shooter Game',
       img: 'clock-3_fdlcsg_c_scale,w_941.png',
       anchor: 'game'
+    },
+    {
+      title: 'Record Player',
+      img: 'beating-heart_wv0qzi_c_scale,w_626.png',
+      anchor: 'record'
     },
     {
       title: 'Down To Earth',

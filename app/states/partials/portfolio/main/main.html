@@ -1,0 +1,8 @@
+<section ng-repeat="project in port.portfolioData" id="{{project.anchor}}">
+
+  <a ui-sref="portfolio-{{project.anchor}}">
+    <h2 class="portfolio-title" id="heart">{{project.title}}</h2>
+    <p>view project</p>
+    <img src="../images/{{project.img}}" alt="{{project.title}}">
+  </a>
+</section>
