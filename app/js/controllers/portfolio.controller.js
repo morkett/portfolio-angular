@@ -46,7 +46,7 @@ function PortfolioController($scope, $location, $anchorScroll, $state){
     },
     {
       title: 'Down To Earth',
-      img: 'BROWSER-MOCKUP.png',
+      img: 'BROWSER-MOCKUP-resize.png',
       anchor: 'd2e',
       tags: ['Responsive', 'Website'],
       desc: 'designed to brief in adobe photoshop, this website reflects the cafes atmosphere and ethos. this website was hand-coded to create a responsive interface, enhanced with the inclusion of css animations and creating behaviours through jquery.',

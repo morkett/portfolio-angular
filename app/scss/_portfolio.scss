@@ -12,25 +12,25 @@ section {
   }
   h2 {
     position: absolute;
-  left: 50%;
-  top: 50%;
-  font-size: 1.7em;
+    left: 50%;
+    top: 50%;
+    font-size: 1.7em;
     letter-spacing: 0.2em;
     line-height: 1;
     background: $white;
     width: 100%;
     text-align: center;
     padding: 5px 0;
-
-  transform: translate(-50%, -50%);
+    color: $black;
+    transform: translate(-50%, -50%);
   }
   p {
     position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-
-  font-size: 1em;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: $black;
+    font-size: 1em;
     letter-spacing: 0.2em;
     line-height: 1;
     background: $white;
@@ -76,6 +76,17 @@ section {
 
 #d2e img {
   height: 60vh;
+}
+
+.d2e-img {
+  width: 70vw;
+}
+
+.d2e-link {
+  height: 100%;
+  width: 100%;
+  @include flex;
+  cursor: pointer;
 }
 
 .icon-container {
@@ -132,6 +143,7 @@ section {
 .icon-arrow-back {
   width: 24px;
   height: 24px;
+  margin-bottom: 10px;
   background-position: -24px 0;
   background-image: url(../images/sprite.svg);
 }
