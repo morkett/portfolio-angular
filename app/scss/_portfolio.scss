@@ -1,0 +1,127 @@
+//SECTION - PORT
+section {
+  min-height: 100vh;
+  // border: $border-dev-green;
+  position: relative;
+  @include flex;
+  color: $black;
+  overflow-x: hidden;
+
+  img {
+    height: 95vh;
+  }
+  h2 {
+    position: absolute;
+  left: 50%;
+  top: 50%;
+  font-size: 1.7em;
+    letter-spacing: 0.2em;
+    line-height: 1;
+    background: $white;
+    width: 100%;
+    text-align: center;
+    padding: 5px 0;
+
+  transform: translate(-50%, -50%);
+  }
+  p {
+    position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  font-size: 1em;
+    letter-spacing: 0.2em;
+    line-height: 1;
+    background: $white;
+    width: 100%;
+    text-align: center;
+    padding: 5px 0;
+    margin-top: 35px;
+    cursor: pointer;
+  }
+}
+
+// PORTFOLIO
+.port-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .dot{
+  display: inline;
+  }
+
+  li:last-of-type span:last-of-type {
+    display: inline-block;
+    color: transparent;
+    width: 0;
+  }
+
+}
+
+
+.port-desc {
+  font-size: .6em;
+  padding: 10%;
+    letter-spacing: .15em;
+    line-height: 1.5;
+    text-align: justify;
+    // text-transform: capitalize;
+}
+
+#d2e img {
+  height: 60vh;
+}
+
+.icon-container {
+  @include flex;
+
+  .inner-box {
+    @include flex;
+
+    h6 {
+      font-size: .5em;
+    letter-spacing: .12em;
+    line-height: 1;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: $black;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    text-align: center;
+    }
+  }
+
+  .icon-links {
+    width: 24px;
+    height: 24px;
+    background-image: url(../images/sprite.svg);
+  }
+}
+
+.icon-github {
+  width: 24px;
+  height: 24px;
+  background-position: 0 -48px;
+}
+
+.icon-codepen {
+  width: 24px;
+  height: 24px;
+  background-position: -24px -48px;
+}
+
+.icon-cv {
+  background-image: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 24px 50px;
+}
+
+.icon-arrow-back {
+  width: 24px;
+  height: 24px;
+  background-position: -24px 0;
+  background-image: url(../images/sprite.svg);
+}
