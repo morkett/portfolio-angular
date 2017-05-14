@@ -31,10 +31,20 @@
   li:last-of-type span {
     display: none;
   }
+  > * {
+   opacity: 0;
+   animation: $ani-fadeIn-alt;
+ }
 }
+
 
 .content {
   background: $content-bg-color;
   animation: $ani-fadeIn;
   overflow-y:scroll;
+
+  > * {
+    opacity: 0;
+    animation: $ani-fadeIn-alt;
+  }
 }
