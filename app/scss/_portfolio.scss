@@ -72,3 +72,56 @@ section {
 #d2e img {
   height: 60vh;
 }
+
+.icon-container {
+  @include flex;
+
+  .inner-box {
+    @include flex;
+
+    h6 {
+      font-size: .5em;
+    letter-spacing: .12em;
+    line-height: 1;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: $black;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    text-align: center;
+    }
+  }
+
+  .icon-links {
+    width: 24px;
+    height: 24px;
+    background-image: url(../images/sprite.svg);
+  }
+}
+
+.icon-github {
+  width: 24px;
+  height: 24px;
+  background-position: 0 -48px;
+}
+
+.icon-codepen {
+  width: 24px;
+  height: 24px;
+  background-position: -24px -48px;
+}
+
+.icon-cv {
+  background-image: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 24px 50px;
+}
+
+.icon-arrow-back {
+  width: 24px;
+  height: 24px;
+  background-position: -24px 0;
+  background-image: url(../images/sprite.svg);
+}
