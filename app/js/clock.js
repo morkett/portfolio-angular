@@ -1,5 +1,3 @@
-
-console.log('HELLLOOOOOOOO');
 function moveHands() {
     with(new Date()) {
         h = 30 * (getHours() % 12 + getMinutes() / 60);

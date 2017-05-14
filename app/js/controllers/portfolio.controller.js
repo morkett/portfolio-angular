@@ -1,4 +1,4 @@
-function PortfolioController($scope, $location, $anchorScroll, $mdSidenav, $log, $state){
+function PortfolioController($scope, $location, $anchorScroll, $state){
   var controller = this;
 
   controller.scrollTo = function(scrollLocation) {
@@ -46,9 +46,8 @@ function PortfolioController($scope, $location, $anchorScroll, $mdSidenav, $log,
       anchor: 'd2e'
     }
   ];
-
+  
   function init() {
-    console.log(controller);
 
   }
 
