@@ -5,18 +5,19 @@
   </section>
   <section id="{{about.aboutDev.anchor}}">
     <h2>{{about.aboutDev.title}}</h2>
+    <ul class="about-icon-container">
+      <li class="about-icon" ng-repeat="list in about.aboutDev.list">
+        {{list}}
+      </li>
+    </ul>
     <p>{{about.aboutDev.desc}}</p>
-    <ul>
-      <li ng-repeat="list in about.aboutDev.list">
-        {{list}}
-      </li>
-    </ul>
+
     <h2>{{about.aboutDesign.title}}</h2>
-    <p>{{about.aboutDesign.desc}}</p>
-    <ul>
-      <li ng-repeat="list in about.aboutDesign.list">
+    <ul class="about-icon-container">
+      <li class="about-icon" ng-repeat="list in about.aboutDesign.list">
         {{list}}
       </li>
     </ul>
+    <p>{{about.aboutDesign.desc}}</p>
   </section>
 </div>

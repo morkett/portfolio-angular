@@ -4,3 +4,28 @@
   left: 0;
   transform: translate(0);
 }
+
+.about h2 {
+  margin-bottom: 5%;
+
+  &:last-of-type {
+    margin-top: 5%;
+  }
+}
+
+.about p {
+  padding:0 10% 2% 10%;
+  line-height: 2;
+}
+
+.about-icon-container {
+  @include flex($direction:row);
+  flex-wrap: wrap;
+  .about-icon {
+    height: 90px;
+    width: 90px;
+    margin: 10px;
+    border: 1px solid $black;
+    @include flex;
+  }
+}
