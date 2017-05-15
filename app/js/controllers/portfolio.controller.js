@@ -1,5 +1,13 @@
 function PortfolioController($scope, $location, $anchorScroll, $state){
   var controller = this;
+  controller.navAni = false;
+
+
+
+  controller.toggleNav = function() {
+    controller.navAni = !controller.navAni;
+    console.log(controller.navAni);
+  };
 
   controller.scrollTo = function(scrollLocation) {
     $location.hash(scrollLocation);

@@ -2,6 +2,96 @@
   background: $dark-grey;
 }
 
+.main-nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 995;
+  width: 30vw;
+  height: 100vh;
+  background: transparent;
+  @include flex;
+  transform:  translateX(-100%);
+  transition: background .2s linear, transform 0s linear .2s;
+
+
+  li{
+    font-size: 1.4em;
+    letter-spacing: .2em;
+    width: 100%;
+    text-align: center;
+    margin: 20px 0;
+    cursor: pointer;
+    transition: font-weight .2s linear 0s , text-shadow .2s linear 0s;
+
+    &:hover {
+      font-weight: bold;
+      transition: font-weight .2s linear 0s, text-shadow .2s linear 0s;
+      text-shadow: 0px 2px 2px rgba(189, 189, 189, 1);
+    }
+  }
+}
+
+.main-nav-ani {
+  background: $dark-grey;
+  transform:  translateX(0%);
+  transition: background .2s linear, transform 0s linear 0s;
+}
+
+.ham-container {
+  border: 1px solid rgba(41, 41, 41, 0.05);
+  background: rgba(41, 41, 41, 0.05);
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  @include flex;
+  left: 26.5vw;
+  left: calc(30vw - 50px);
+  z-index: 999;
+  cursor: pointer;
+}
+
+.nav-ham {
+  position: relative;
+  width: 20px;
+  height: 2px;
+  background: $black;
+  cursor: pointer;
+
+  &:after, &:before {
+    @include pseudo;
+    top: 0px;
+    left: 0;
+    transform: translateY(5px);
+    height: 100%;
+    width: 100%;
+    background: $black;
+    transition: all .2s linear;
+  }
+  &:after {
+    transform: translateY(-5px);
+  }
+}
+
+.nav-ani {
+  background: transparent;
+  transition: background .2s linear;
+}
+.nav-ani:before {
+  transform: translate(0) rotate(-45deg);
+  background: $black;
+}
+.nav-ani:after {
+  transform: translate(0) rotate(45deg);
+  background: $black;
+}
+
+.main-blur {
+  filter: blur(.5em);
+  transition: filter .2s linear;
+  overflow: hidden!important;
+}
+
 .sideBar {
   background: $sideBar-bg--color;
   animation: $ani-fadeIn;
@@ -40,10 +130,16 @@
 .content {
   background: $content-bg-color;
   animation: $ani-fadeIn;
+  transition: filter .2s linear;
   overflow-y:scroll;
 
   > * {
     opacity: 0;
     animation: $ani-fadeIn-alt;
   }
+}
+
+* {
+  outline: none;
+    border: 0;
 }

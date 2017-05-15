@@ -1,5 +1,16 @@
+<div class="ham-container" ng-click="port.toggleNav()">
+<span class="nav-ham" ng-class="{'nav-ani': port.navAni}"></span>
+</div>
+<nav class="main-nav" ng-class="{'main-nav-ani': port.navAni}">
+  <ul>
+    <li ui-sref="home" ng-click="port.toggleNav()">home</li>
+    <li ui-sref="portfolio" ng-click="port.toggleNav()">portfolio</li>
+    <li ui-sref="aboutfix" ng-click="port.toggleNav()">about</li>
+  </ul>
+</nav>
 <aside  ui-view="aside" class="sideBar"  flex="30" flex-xs="100">
+
 </aside>
 
-<main ui-view="main-content" class="content" flex="70" flex-xs="100">
+<main ui-view="main-content" class="content" ng-class="{'main-blur': port.navAni}" flex="70" flex-xs="100">
 </main>
