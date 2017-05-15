@@ -1,6 +1,6 @@
 <h1>About</h1>
-<ul hide-gt-sm layout="column">
-  <li><a>Information</a></li>
+<ul layout="column" ng-controller="AboutController as about">
+  <li><a ng-click="about.scrollTo(about.aboutInfo.anchor)">Information</a></li>
   <span>&#8226;</span>
-  <li><a>Skills</a></li>
+  <li><a ng-click="about.scrollTo(about.aboutDev.anchor)">Skills</a></li>
 </ul>

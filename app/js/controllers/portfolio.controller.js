@@ -30,6 +30,15 @@ function PortfolioController($scope, $location, $anchorScroll, $state){
       codedrops: 'https://tympanus.net/codrops/collective/collective/'
     },
     {
+      title: 'Your Movies',
+      img: 'movie.png',
+      anchor: 'movies',
+      tags: ['rMVC', 'API', 'AngularJs', 'NodeJs'],
+      desc: 'This App allows users to create an account and browse through movie collections ranging from those in theatre to movies by category, and gives users the ability to look up similar movies. This project is a MEAN app that uses a rMVC approach and utilises HTTP requests. It utilises Node/Express server-side, and AngularJS client-side and an external API to create a single page application',
+      github: 'https://github.com/morkett/sg-project-3',
+      site: 'https://david-sg-project-3.herokuapp.com/#/'
+    },
+    {
       title: 'Realtime Clock',
       img: 'clock-3_fdlcsg_c_scale,w_941.png',
       anchor: 'realtime-clock',

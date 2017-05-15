@@ -1,4 +1,4 @@
-function MainRouter ($stateProvider, $urlRouterProvider) {
+function MainRouter ($stateProvider, $urlRouterProvider, $locationProvider) {
   $stateProvider
     .state('home', {
       url: '/home',
@@ -25,6 +25,15 @@ function MainRouter ($stateProvider, $urlRouterProvider) {
         'aside@portfolio-beating-heart': {templateUrl: '/states/partials/portfolio/heart/aside.html'},
 
         'main-content@portfolio-beating-heart': {templateUrl: '/states/partials/portfolio/heart/heart.html'}
+      }
+    })
+    .state('portfolio-movies', {
+      url: '/portfolio/movies',
+      views: {
+        '': {templateUrl: '/states/template.html'},
+        'aside@portfolio-movies': {templateUrl: '/states/partials/portfolio/movies/aside.html'},
+
+        'main-content@portfolio-movies': {templateUrl: '/states/partials/portfolio/movies/movies.html'}
       }
     })
     .state('portfolio-realtime-clock', {
@@ -80,7 +89,7 @@ function MainRouter ($stateProvider, $urlRouterProvider) {
 
 
 
-
+  $locationProvider.html5Mode(true)
   $urlRouterProvider.otherwise('/portfolio');
 }
 
