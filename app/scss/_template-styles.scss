@@ -92,9 +92,11 @@
   overflow: hidden!important;
 }
 
+
+//TEMPLATE
+
 .sideBar {
   background: $sideBar-bg--color;
-  animation: $ani-fadeIn;
 
   overflow: hidden;
   @include flex;
@@ -129,7 +131,6 @@
 
 .content {
   background: $content-bg-color;
-  animation: $ani-fadeIn;
   transition: filter .2s linear;
   overflow-y:scroll;
 
