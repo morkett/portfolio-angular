@@ -15,9 +15,6 @@ function PortfolioController($scope, $location, $anchorScroll, $state){
     console.log('button hit for scrollTo');
   };
 
-// controller.anchor = function() {
-//   $state.go('portfolio?beating-heart');
-// };
   controller.portfolioData = [
     {
       title: 'Beating Heart',

@@ -12,10 +12,11 @@ function AboutController($scope, $location, $anchorScroll, $state){
     title: 'i am a self-taught front-end web developer from london',
     desc: 'i have experience of creating responsive interactive websites by hand-coding html, css, and jquery. i am passionate about design and alongside my technical ability, i can create innovative interfaces which allow ease of usability. i follow many online blogs and front-end news sites to keep updated with current standards and new developments in an ever-changing field. teaching myself to code while working full-time has required me to be proactive, a fast learner, and efficient in my methods of execution.',
     anchor: 'information',
-    codepen: 'https://codepen.io/morkett/full/VjByYj/',
+    codepen: 'https://codepen.io/morkett',
     github: 'https://github.com/morkett',
     email: 'dcorkett@gmail.com',
-    cv: 'David-Corkett-Front-End-Developer.pdf'
+    cv: 'David-Corkett-Front-End-Developer.pdf',
+    list: ['codepen', 'github','email','cv']
   };
 
   controller.aboutDev = {
