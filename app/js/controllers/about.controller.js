@@ -44,6 +44,7 @@ function AboutController($scope, $location, $anchorScroll, $state){
   init();
 }
 
+AboutController.$inject = ['$scope', '$location', '$anchorScroll', '$state'];
 
 
 angular

@@ -2,8 +2,6 @@ function PortfolioController($scope, $location, $anchorScroll, $state){
   var controller = this;
   controller.navAni = false;
 
-
-
   controller.toggleNav = function() {
     controller.navAni = !controller.navAni;
     console.log(controller.navAni);
@@ -80,6 +78,7 @@ function PortfolioController($scope, $location, $anchorScroll, $state){
   init();
 }
 
+PortfolioController.$inject = ['$scope', '$location', '$anchorScroll', '$state'];
 
 
 angular

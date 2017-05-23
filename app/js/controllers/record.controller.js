@@ -29,6 +29,7 @@ function RecordController($timeout){
   init();
 }
 
+RecordController.$inject = ['$timeout'];
 
 
 angular

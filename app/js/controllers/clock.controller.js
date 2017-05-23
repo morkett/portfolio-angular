@@ -37,6 +37,7 @@ function ClockController($interval){
 }
 
 
+ClockController.$inject = ['$interval'];
 
 angular
   .module('PortfolioApp')
