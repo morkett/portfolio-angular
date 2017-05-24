@@ -1,7 +1,7 @@
 function MainRouter ($stateProvider, $urlRouterProvider, $locationProvider) {
   $stateProvider
     .state('home', {
-      url: '/home',
+      url: '/',
       views: {
         '': {templateUrl: '/states/template.html'},
         'aside@home': {templateUrl: '/states/partials/home/aside.html'},
