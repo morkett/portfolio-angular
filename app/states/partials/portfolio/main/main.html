@@ -1,4 +1,4 @@
-<section ng-repeat="project in port.portfolioData" id="{{project.anchor}}">
+<section ng-repeat="project in port.portfolioData" id="{{project.anchor}}" ng-init="port.navAniFalse()">
 
   <a ui-sref="portfolio-{{project.anchor}}">
     <h2 class="portfolio-title" id="heart">{{project.title}}</h2>

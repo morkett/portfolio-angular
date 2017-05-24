@@ -70,10 +70,12 @@ function PortfolioController($scope, $location, $anchorScroll, $state){
     }
   ];
 
+  controller.navAniFalse = function() {
+    controller.navAni = false;
+  };
+
   function init() {
-
   }
-
 
   init();
 }

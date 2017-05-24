@@ -1,5 +1,5 @@
 
-<div class="wrap" ng-controller="ClockController as clock">
+<div class="wrap" ng-controller="ClockController as clock" ng-init="port.navAniFalse()">
   <div class="clock">
     <div class="hour-hand" >
       <img src="images/clock/hour-hand.png" ng-style="clock.hoursHandStyle" id="js-hours" />
