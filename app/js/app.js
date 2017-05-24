@@ -94,6 +94,8 @@ function MainRouter ($stateProvider, $urlRouterProvider, $locationProvider) {
   $urlRouterProvider.otherwise('/portfolio');
 }
 
+MainRouter.$inject = ['$stateProvider', '$urlRouterProvider', '$locationProvider'];
+
 
 angular
 .module('PortfolioApp', ['ui.router','ngMaterial'])
