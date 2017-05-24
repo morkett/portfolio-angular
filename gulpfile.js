@@ -69,7 +69,7 @@ gulp.task('images', function(){
   .pipe(cache(imagemin({
     interlaced: true
   })))
-  .pipe(gulp.dest('dist../images'));
+  .pipe(gulp.dest('dist/images'));
 });
 
 //Cleaning Up Generated files
@@ -93,13 +93,23 @@ gulp.task('default', function (callback) {
   );
 });
 
+gulp.task('copyStatesFiles', function() {
+  gulp.src('app/states/**/*')
+   .pipe(gulp.dest('dist/states'));
+});
+
+gulp.task('copySoundFiles', function() {
+  gulp.src('app/sounds/**/*')
+   .pipe(gulp.dest('dist/sounds'));
+});
+
 //run sequence
 
 var runSequence = require('run-sequence');
 
 gulp.task('build', function (callback) {
   runSequence('clean:dist',
-    ['sass', 'useref', 'images'],
+    ['sass', 'useref', 'images', 'copyStatesFiles', 'copySoundFiles'],
     callback
   );
 });
