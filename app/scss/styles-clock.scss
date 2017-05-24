@@ -16,7 +16,7 @@
 .clock {
   height: 500px;
   width: 500px;
-  background: url(../images/clock-no-shadow-min.png) center center no-repeat;
+  background: url(../images/clock/clock-no-shadow-min.png) center center no-repeat;
   background-size: contain;
   z-index: 100;
   transform: translateY(70px);
@@ -27,7 +27,7 @@
 .shadow-clock {
   top: 0;
   left: 0;
-  background: url(../images/shadow.png) center bottom no-repeat;
+  background: url(../images/clock/shadow.png) center bottom no-repeat;
   background-size: contain;
   transform: translateY(10px) translateX(-50px);
   width: 600px;
@@ -96,7 +96,7 @@
 .icon-clock {
   display: block;
   background-repeat: no-repeat;
-  background-image: url(../images/sprite-clock.svg);
+  background-image: url(../images/clock/sprite-clock.svg);
   width: 34px;
   height: 32px;
   padding: 20px;

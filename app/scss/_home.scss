@@ -1,0 +1,13 @@
+.home {
+  background: url(../images/header.jpg) center center no-repeat;
+  background-size: cover;
+  filter: blur(.15em);
+&:after {
+  @include pseudo;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  background: rgba(227, 227, 227, .1);
+}
+}

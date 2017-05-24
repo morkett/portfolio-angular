@@ -4,17 +4,13 @@
 @import "template-styles";
 @import "portfolio";
 @import "about";
+@import "home";
 
-// TODO:
-// TODO:
-// TODO:
-// TODO: CHANGE FLEX IN SCSSS TO HTML: https://material.angularjs.org/1.0.5/layout/options
-// TODO:
-// TODO:
-// TODO:
 
 .portfolioProjectsNav {
   cursor: pointer;
+a  {text-decoration: none;
+  color: $black;}
 }
 
 body {
