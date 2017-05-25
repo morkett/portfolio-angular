@@ -30,12 +30,15 @@
   <script src="js/controllers/record.controller.js"></script>
   <script src="js/controllers/clock.controller.js"></script>
   <!-- endbuild -->
+  <script src="js/directives/resize.directive.js"></script>
 
 </head>
 <body layout="column">
   <div class="container"
     layout="row"
     flex
+    layout-sm="column"
+    layout-xs="column"
     ng-controller="PortfolioController as port"
     ui-view>
     </div>
