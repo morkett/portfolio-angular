@@ -91,7 +91,7 @@ function MainRouter ($stateProvider, $urlRouterProvider, $locationProvider) {
 
   // $locationProvider.html5Mode(true);
 
-  $urlRouterProvider.otherwise('/portfolio');
+  $urlRouterProvider.otherwise('/');
 }
 
 MainRouter.$inject = ['$stateProvider', '$urlRouterProvider', '$locationProvider'];
