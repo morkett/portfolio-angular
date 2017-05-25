@@ -12,18 +12,13 @@ function resize () {
       checkScreen();
 
       function  checkScreen () {
-        if(window.innerWidth < 960){
-          angular.element(element)         .parent().css("display", "none");
+        if(window.innerWidth < 780){
+          angular.element(element)         .parent().css('display', 'none');       
 
-          angular.element(element).remove()
-          // var css = {
-          //   selector: '.content',
-          //   rules: [
-          //     'display: none'
-          //   ]
-          // };
-          // var outputColorStyleSheet = css.selector + css.rules.join(';');
-          // angular.element(document).find('head').prepend('<style type="text/css">' + outputColorStyleSheet + '</style>');
+          // angular.element(element).remove();
+        }
+        if(window.innerWidth > 780){
+          angular.element(element)         .parent().css('display', 'block');
         }
       }
     }

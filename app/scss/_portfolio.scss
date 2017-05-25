@@ -146,4 +146,35 @@ section {
   margin-bottom: 10px;
   background-position: -24px 0;
   background-image: url(../images/sprite.svg);
+  display: block;
+}
+
+#movies img, #game img {
+  @media screen and (max-width: 650px) {
+     height: 85vh;
+   }
+   @media screen and (max-width: 590px) {
+      height: 75vh;
+    }
+    @media screen and (max-width: 500px) {
+       height: 65vh;
+     }
+}
+#d2e img {
+  @media screen and (max-width: 818px) {
+     height: 55vh;
+   }
+   @media screen and (max-width: 530px) {
+      height: 50vh;
+    }
+    @media screen and (max-width: 480px) {
+       height: 45vh;
+     }
+}
+
+#realtime-clock a {
+  @media screen and (max-width: 600px) {
+     height: 115vh;
+     display: block;
+   }
 }

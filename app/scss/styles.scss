@@ -19,4 +19,36 @@ body {
   text-transform: uppercase;
   color: $black;
   overflow-x: hidden;
+  @include flex($justify:flex-start);
+}
+
+.container {
+  // @include flex($direction: row, $justify: flex-start);
+}
+
+.sideBar {
+  height: 100vh;
+  width: 30vw;
+  @include flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  @media screen and (max-width: 780px) {
+     position: relative;
+     width: 100vw;
+   }
+}
+
+.content {
+  width: 70vw;
+  margin-left: 30vw;
+  min-height: 100vh;
+
+  display: block;
+
+  @media screen and (max-width: 780px) {
+    //  position: relative;
+    margin-left: 0;
+     width: 100vw;
+   }
 }
