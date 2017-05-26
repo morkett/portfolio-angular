@@ -3,17 +3,14 @@
 @import "mixins";
 @import "template-styles";
 @import "portfolio";
+@import "about";
+@import "home";
 
-// TODO:
-// TODO:
-// TODO:
-// TODO: CHANGE FLEX IN SCSSS TO HTML: https://material.angularjs.org/1.0.5/layout/options
-// TODO:
-// TODO:
-// TODO:
 
 .portfolioProjectsNav {
   cursor: pointer;
+a  {text-decoration: none;
+  color: $black;}
 }
 
 body {
@@ -22,65 +19,36 @@ body {
   text-transform: uppercase;
   color: $black;
   overflow-x: hidden;
+  @include flex($justify:flex-start);
 }
 
+.container {
+  // @include flex($direction: row, $justify: flex-start);
+}
 
+.sideBar {
+  height: 100vh;
+  width: 30vw;
+  @include flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  @media screen and (max-width: 780px) {
+     position: relative;
+     width: 100vw;
+   }
+}
 
+.content {
+  width: 70vw;
+  margin-left: 30vw;
+  min-height: 100vh;
 
-//SECTION - ABOUT
-//
-// .about {
-//   h2{
-//     transform: translate(0, 0);
-//     top: 0;
-//     left: 0;
-//     position: relative;
-//
-//     padding: 36px 0 30px 0;
-//     font-size: 1.4em;
-//     letter-spacing: 0.2em;
-//     line-height: 1.2em;
-//     text-align: center;
-//
-//     cursor: default;
-//   }
-//   p {
-//     position: relative;
-//     top: 0;
-//     left: 0;
-//     transform: translate(0,0);
-//     padding: 0 10%;
-//     text-align: justify;
-//     font-size: 1em;
-//     letter-spacing: 0.15em;
-//     line-height: 1.7em;
-//     cursor: default;
-//   }
-// }
+  display: block;
 
-// .dev-container, .design-container {
-//   @include flex;
-// }
-//
-// .container-icon-skills {
-//   @include flex($direction: row);
-// }
-//
-// .icon-skills {
-//   border: 1px solid #292929;
-// width: 70px;
-// height: 70px;
-// text-align: center;
-// margin: 20px;
-// display: -ms-flexbox;
-// display: flex;
-// -ms-flex-pack: center;
-// justify-content: center;
-// -ms-flex-align: center;
-// align-items: center;
-// -ms-flex-direction: column;
-// flex-direction: column;
-// top: 0;
-// left: 0;
-// }
-// @import "styles-heart";
+  @media screen and (max-width: 780px) {
+    //  position: relative;
+    margin-left: 0;
+     width: 100vw;
+   }
+}

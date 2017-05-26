@@ -1,0 +1,24 @@
+
+<div class="wrap" ng-controller="ClockController as clock" ng-init="port.navAniFalse()">
+  <div class="clock">
+    <div class="hour-hand" >
+      <img src="images/clock/hour-hand.png" ng-style="clock.hoursHandStyle" id="js-hours" />
+    </div>
+    <div class="min-hand" >
+      <img src="images/clock/min-hand.png" ng-style="clock.minutesHandStyle" id="js-minutes"/>
+    </div>
+    <div class="sec-hand">
+      <img src="images/clock/second-hand.png" ng-style="clock.secondsHandStyle" id="js-seconds"/>
+    </div>
+
+    <div class="shadow-clock"></div>
+
+    <audio src="sounds/clock-ticking.mp3"  autoplay loop class="audio" id="audio" ng-if="clock.startSound"></audio>
+    <span ng-if="clock.startSound"
+      ng-click="clock.toggleStart()"
+    class="icon-clock icon-volume-high"></span>
+    <span ng-if="!clock.startSound" class="icon-clock icon-volume-mute" ng-click="clock.toggleStart()"></span>
+
+</div>
+
+</div>

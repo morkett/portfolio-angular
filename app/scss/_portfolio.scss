@@ -12,25 +12,25 @@ section {
   }
   h2 {
     position: absolute;
-  left: 50%;
-  top: 50%;
-  font-size: 1.7em;
+    left: 50%;
+    top: 50%;
+    font-size: 1.7em;
     letter-spacing: 0.2em;
     line-height: 1;
     background: $white;
     width: 100%;
     text-align: center;
     padding: 5px 0;
-
-  transform: translate(-50%, -50%);
+    color: $black;
+    transform: translate(-50%, -50%);
   }
   p {
     position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-
-  font-size: 1em;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: $black;
+    font-size: 1em;
     letter-spacing: 0.2em;
     line-height: 1;
     background: $white;
@@ -50,7 +50,6 @@ section {
   .dot{
   display: inline;
   }
-
   li:last-of-type span:last-of-type {
     display: inline-block;
     color: transparent;
@@ -66,11 +65,28 @@ section {
     letter-spacing: .15em;
     line-height: 1.5;
     text-align: justify;
-    // text-transform: capitalize;
+
+    span {
+      font-size: .9em;
+      display: block;
+      text-align: center;
+      margin-top: 10px;
+    }
 }
 
 #d2e img {
   height: 60vh;
+}
+
+.d2e-img {
+  height: 95vh;
+}
+
+.d2e-link {
+  height: 100vh;
+  width: 100%;
+  @include flex;
+  cursor: pointer;
 }
 
 .icon-container {
@@ -110,6 +126,11 @@ section {
   height: 24px;
   background-position: -24px -48px;
 }
+.icon-site {
+  width: 24px;
+  height: 24px;
+  background-position: 0px 0px;
+}
 
 .icon-cv {
   background-image: none;
@@ -122,6 +143,77 @@ section {
 .icon-arrow-back {
   width: 24px;
   height: 24px;
+  margin-bottom: 10px;
   background-position: -24px 0;
   background-image: url(../images/sprite.svg);
+  display: block;
+}
+
+#movies img, #game img {
+  @media screen and (max-width: 1070px) {
+     height: 85vh;
+   }
+  @media screen and (max-width: 960px) {
+     height: 82vh;
+   }
+  @media screen and (max-width: 930px) {
+     height: 80vh;
+   }
+  @media screen and (max-width: 905px) {
+     height: 78vh;
+   }
+  @media screen and (max-width: 885px) {
+     height: 76vh;
+   }
+  @media screen and (max-width: 860px) {
+     height: 70vh;
+   }
+  @media screen and (max-width: 800px) {
+     height: 65vh;
+   }
+  @media screen and (max-width: 650px) {
+     height: 85vh;
+   }
+   @media screen and (max-width: 590px) {
+      height: 75vh;
+    }
+    @media screen and (max-width: 500px) {
+       height: 65vh;
+     }
+}
+
+.d2e-img-page {
+  width: 80vw;
+}
+
+#d2e img, .d2e-img-page {
+  @media screen and (max-width: 980px) {
+     height: 53vh;
+   }
+
+   @media screen and (max-width: 860px) {
+      height: 50vh;
+    }
+  @media screen and (max-width: 818px) {
+     height: 45vh;
+   }
+   @media screen and (max-width: 530px) {
+      height: 50vh;
+    }
+    @media screen and (max-width: 480px) {
+       height: 45vh;
+     }
+}
+
+#realtime-clock a {
+  @media screen and (max-width: 600px) {
+     height: 115vh;
+     display: block;
+   }
+}
+
+#record-player img {
+  @media screen and (max-width: 960px) {
+     height: 80vh;
+   }
 }

@@ -1,30 +1,36 @@
-<section class="about">
-  <h2>i am a self-taught <br/>front-end web developer <br/>from london</h2>
-          <p>
-            I have experience of creating responsive interactive websites by hand-coding HTML, CSS, and JQuery. I am passionate about design and alongside my technical ability, I can create innovative interfaces which allow ease of usability. I follow many online
-          blogs and front-end news sites to keep updated with current standards and new developments in an ever-changing field. Teaching myself to code while working full-time has required me to be proactive, a fast learner, and efficient
-          in my methods of execution.</p>
-</section>
-<section class="about">
-  <h2>Skills</h2>
-  <div class="dev-container">
-          <h3>development</h3>
-          <div class="container-icon-skills">
-            <span class="icon-skills icon-skills-css">css3</span>
-            <span class="icon-skills icon-skills-html">html</span>
-            <span class="icon-skills icon-skills-js">JS</span>
-            <span class="icon-skills icon-skills-jquery">jQuery</span>
-            <span class="icon-skills icon-skills-scss">scss</span>
-          </div>
-          <p>These languages create the bones of the website, dictate appearance, and manipulate behavior, bringing the website to life. Coupled with version control this allows consistency in user experience. </p>
-        </div>
+<div ng-controller="AboutController as about" class="about" ng-init="port.navAniFalse()">
+  <section id="{{about.aboutInfo.anchor}}">
+    <h2>{{about.aboutInfo.title}}</h2>
+    <p>{{about.aboutInfo.desc}}</p>
+    <ul class="contact">
+      <li>
+        <a href="{{about.aboutInfo.codepen}}" target="_blank" class="{{about.aboutInfo.list[0]}}"></a>{{about.aboutInfo.list[0]}}</li>
+      <li>
+        <a href="{{about.aboutInfo.github}}" target="_blank" class="{{about.aboutInfo.list[1]}}"></a>{{about.aboutInfo.list[1]}}</li>
+      <li>
+        <a href="mailto:{{about.aboutInfo.email}}" class="{{about.aboutInfo.list[2]}}"></a>{{about.aboutInfo.list[2]}}</li>
+      <li>
+        <a href="images/{{about.aboutInfo.cv}}" target="_blank" class="{{about.aboutInfo.list[3]}}">
+          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewbox="0 0 32 32">
+            <path fill="#292929" d="M27 0h-24c-1.65 0-3 1.35-3 3v26c0 1.65 1.35 3 3 3h24c1.65 0 3-1.35 3-3v-26c0-1.65-1.35-3-3-3zM26 28h-22v-24h22v24zM8 18h14v2h-14zM8 22h14v2h-14zM10 9c0-1.657 1.343-3 3-3s3 1.343 3 3c0 1.657-1.343 3-3 3s-3-1.343-3-3zM15 12h-4c-1.65 0-3 0.9-3 2v2h10v-2c0-1.1-1.35-2-3-2z"></path>
+            </svg></a>{{about.aboutInfo.list[3]}}</li>
+    </ul>
+  </section>
+  <section id="{{about.aboutDev.anchor}}">
+    <h2>{{about.aboutDev.title}}</h2>
+    <ul class="about-icon-container">
+      <li class="about-icon" ng-repeat="list in about.aboutDev.list">
+        {{list}}
+      </li>
+    </ul>
+    <p>{{about.aboutDev.desc}}</p>
 
-        <div class="design-container">
-          <h3>design</h3>
-          <div class="container-icon-skills">
-            <span class="icon-skills icon-skills-ps">ps</span>
-            <span class="icon-skills icon-skills-ai">ai</span>
-        </div>
-          <p>These tools complement the development of websites by allowing image manipulation, creating website layouts and designing online resources such as SVGs.</p>
-        </div>
-</section>
+    <h2>{{about.aboutDesign.title}}</h2>
+    <ul class="about-icon-container">
+      <li class="about-icon" ng-repeat="list in about.aboutDesign.list">
+        {{list}}
+      </li>
+    </ul>
+    <p>{{about.aboutDesign.desc}}</p>
+  </section>
+</div>
