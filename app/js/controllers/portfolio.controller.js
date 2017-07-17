@@ -1,4 +1,4 @@
-function PortfolioController($scope, $location, $anchorScroll, $state){
+function PortfolioController($scope, $location, $anchorScroll){
   var controller = this;
   controller.navAni = false;
 

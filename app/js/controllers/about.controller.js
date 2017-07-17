@@ -1,4 +1,4 @@
-function AboutController($scope, $location, $anchorScroll, $state){
+function AboutController($scope, $location, $anchorScroll){
   var controller = this;
 
   controller.scrollTo = function(scrollLocation) {
