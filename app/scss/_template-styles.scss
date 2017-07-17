@@ -18,13 +18,13 @@
     //  position: relative;
     margin-left: 0;
      width: 100vw;
-     height: 50px;
-     flex-direction: row;
+     height: 100vh;
+     flex-direction: column;
    }
 
   ul {
     @media screen and (max-width: 780px) {
-       @include flex($direction: row);
+       @include flex($direction: column);
        width: 100%;
      }
   }

@@ -102,6 +102,10 @@ gulp.task('copySoundFiles', function() {
   gulp.src('app/sounds/**/*')
    .pipe(gulp.dest('dist/sounds'));
 });
+gulp.task('copyPdf', function() {
+  gulp.src('app/images/**/*.pdf')
+   .pipe(gulp.dest('dist/images'));
+});
 
 //run sequence
 
@@ -109,7 +113,7 @@ var runSequence = require('run-sequence');
 
 gulp.task('build', function (callback) {
   runSequence('clean:dist',
-    ['sass', 'useref', 'images', 'copyStatesFiles', 'copySoundFiles'],
+    ['sass', 'useref', 'images','copyPdf', 'copyStatesFiles', 'copySoundFiles'],
     callback
   );
 });
