@@ -98,5 +98,5 @@ MainRouter.$inject = ['$stateProvider', '$urlRouterProvider', '$locationProvider
 
 
 angular
-.module('PortfolioApp', ['ui.router','ngMaterial'])
+.module('PortfolioApp', ['ui.router'])
 .config(MainRouter);
