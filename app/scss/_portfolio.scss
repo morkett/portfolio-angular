@@ -62,9 +62,11 @@ section {
 .port-desc {
   font-size: .6em;
   padding: 10%;
-    letter-spacing: .15em;
+    // letter-spacing: .15em;
     line-height: 1.5;
     text-align: justify;
+    text-transform: capitalize;
+letter-spacing: .05em;
 
     span {
       font-size: .9em;
