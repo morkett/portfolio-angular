@@ -18,14 +18,18 @@
   padding:0 10% 2% 10%;
   line-height: 2;
   cursor: default;
+
+  text-transform: capitalize;
+letter-spacing: .05em;
 }
 
 .about-icon-container {
   @include flex($direction:row);
   flex-wrap: wrap;
+      width: 90%;
   .about-icon {
-    height: 90px;
-    width: 90px;
+    height: 80px;
+    width: 80px;
     margin: 10px;
     border: 1px solid $black;
     @include flex;
