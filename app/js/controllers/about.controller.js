@@ -14,7 +14,7 @@ function AboutController($scope, $location, $anchorScroll){
     codepen: 'https://codepen.io/morkett',
     github: 'https://github.com/morkett',
     email: 'dcorkett@gmail.com',
-    cv: 'David-Corkett-Front-End-Developer.pdf',
+    cv: 'cv.pdf',
     list: ['codepen', 'github','email','cv']
   };
 
