@@ -8,8 +8,8 @@ function AboutController($scope, $location, $anchorScroll){
 
 
   controller.aboutInfo = {
-    title: 'i am a self-taught front-end web developer from london',
-    desc: 'i have experience of creating responsive interactive websites and apps by hand-coding html, css, and javascript. i am passionate about design and alongside my technical ability, i can create innovative interfaces which allow ease of usability. i follow many online blogs and front-end news sites to keep updated with current standards and new developments in an ever-changing field. teaching myself to code while working full-time has required me to be proactive, a fast learner, and efficient in my methods of execution.',
+    title: 'i am a front-end web developer from london',
+    desc: 'An experienced Web Developer specialising in front end development. Well-versed in structuring, developing and implementing interactive and optimised websites. Proficient in numerous programming languages and working in an agile way. Some projects have reached over 24,000 views and have been published on leading coding websites. Passionate about design and creating innovative interfaces. I\'m looking to work in an innovative team taking my skills and career to the next level.',
     anchor: 'information',
     codepen: 'https://codepen.io/morkett',
     github: 'https://github.com/morkett',
