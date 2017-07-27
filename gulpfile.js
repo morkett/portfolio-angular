@@ -103,8 +103,8 @@ gulp.task('copySoundFiles', function() {
    .pipe(gulp.dest('dist/sounds'));
 });
 gulp.task('copyPdf', function() {
-  gulp.src('app/images/**/*.pdf')
-   .pipe(gulp.dest('dist/images'));
+  gulp.src('app/**/*.pdf')
+   .pipe(gulp.dest('dist/'));
 });
 
 //run sequence
