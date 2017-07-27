@@ -3,16 +3,18 @@
 }
 
 .main-nav {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 995;
   width: 30vw;
   height: 100vh;
-  background: transparent;
+  background: $sideBar-bg--color;
+
+
   @include flex;
   transform:  translateX(-100%);
-  transition: background .2s linear, transform 0s linear .2s;
+  transition: transform .2s linear .2s;
 
   @media screen and (max-width: 780px) {
     //  position: relative;
@@ -50,9 +52,9 @@
 }
 
 .main-nav-ani {
-  background: $dark-grey;
+  // background: $dark-grey;
   transform:  translateX(0%);
-  transition: background .2s linear, transform 0s linear 0s;
+  transition: transform 0.2s linear 0s;
 }
 
 .ham-container {

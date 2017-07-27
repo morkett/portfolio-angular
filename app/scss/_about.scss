@@ -6,7 +6,8 @@
 }
 
 .about h2 {
-  margin-bottom: 5%;
+  margin-bottom: 3%;
+  width: 90%;
   cursor: default;
 
   &:last-of-type {
@@ -18,9 +19,14 @@
   padding:0 10% 2% 10%;
   line-height: 2;
   cursor: default;
+  margin-top: 0;
 
   text-transform: capitalize;
 letter-spacing: .05em;
+}
+
+.about-dev {
+  margin-top: 35px !important;
 }
 
 .about-icon-container {

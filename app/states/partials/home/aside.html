@@ -1,6 +1,6 @@
 <h1>David Corkett</h1>
 <h1 class="home-subH1">Front End Web Developer</h1>
-<ul class="portfolioProjectsNav">
+<ul class="portfolioProjectsNav homeNav">
   <li>
   <a ui-sref="portfolio">Portfolio</a>
   </li>
@@ -10,4 +10,13 @@
   <li>
     <a ui-sref="about">About</a>
   </li>
+</ul>
+
+<ul class="contact home-contact" ng-controller="AboutController as about">
+  <li>
+    <a href="{{about.aboutInfo.codepen}}" target="_blank" class="{{about.aboutInfo.list[0]}}"></a></li>
+  <li>
+    <a href="{{about.aboutInfo.github}}" target="_blank" class="{{about.aboutInfo.list[1]}}"></a></li>
+  <li>
+    <a href="mailto:{{about.aboutInfo.email}}" class="{{about.aboutInfo.list[2]}}"></a></li>
 </ul>
