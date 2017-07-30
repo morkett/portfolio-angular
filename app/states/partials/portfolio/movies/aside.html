@@ -1,28 +1,28 @@
 <a class="icon-links icon-arrow-back"  ui-sref="portfolio"></a>
-<h1>{{port.portfolioData[1].title}}</h1>
+<h1>{{port.portfolioData[2].title}}</h1>
 <ul class="port-list" >
-  <li ng-repeat="tags in port.portfolioData[1].tags track by $index">{{tags}} <span class="dot">&#8226;</span></li>
+  <li ng-repeat="tags in port.portfolioData[2].tags track by $index">{{tags}} <span class="dot">&#8226;</span></li>
 
 </ul>
 <p class="port-desc">
- {{port.portfolioData[1].desc}}
+ {{port.portfolioData[2].desc}}
 </p>
 
 <div class="icon-container">
-  <div class="inner-box" ng-if="port.portfolioData[1].codedrops">
-    <a href="{{port.portfolioData[1].codedrops}}" target="_blank" class="icon-links icon-link"></a>
+  <div class="inner-box" ng-if="port.portfolioData[2].codedrops">
+    <a href="{{port.portfolioData[2].codedrops}}" target="_blank" class="icon-links icon-link"></a>
     <h6>featured on codrops</h6>
   </div>
-  <div class="inner-box" ng-if="port.portfolioData[1].codepen">
-    <a href="{{port.portfolioData[1].codepen}}" target="_blank" class="icon-links icon-codepen"></a>
+  <div class="inner-box" ng-if="port.portfolioData[2].codepen">
+    <a href="{{port.portfolioData[2].codepen}}" target="_blank" class="icon-links icon-codepen"></a>
     <h6>view on codepen</h6>
   </div>
-  <div class="inner-box" ng-if="port.portfolioData[1].site">
-    <a class="icon-links icon-site" href="{{port.portfolioData[1].site}}" target="_blank"></a>
+  <div class="inner-box" ng-if="port.portfolioData[2].site">
+    <a class="icon-links icon-site" href="{{port.portfolioData[2].site}}" target="_blank"></a>
     <h6>view app</h6>
   </div>
-  <div class="inner-box" ng-if="port.portfolioData[1].github">
-    <a class="icon-links icon-github" href="{{port.portfolioData[1].github}}" target="_blank"></a>
+  <div class="inner-box" ng-if="port.portfolioData[2].github">
+    <a class="icon-links icon-github" href="{{port.portfolioData[2].github}}" target="_blank"></a>
     <h6>view on github</h6>
   </div>
 

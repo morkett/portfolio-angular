@@ -1,25 +1,25 @@
 <a class="icon-links icon-arrow-back"  ui-sref="portfolio"></a>
-<h1>{{port.portfolioData[2].title}}</h1>
+<h1>{{port.portfolioData[5].title}}</h1>
 <ul class="port-list" >
-  <li ng-repeat="tags in port.portfolioData[2].tags track by $index">{{tags}} <span class="dot">&#8226;</span></li>
+  <li ng-repeat="tags in port.portfolioData[5].tags track by $index">{{tags}} <span class="dot">&#8226;</span></li>
 
 </ul>
 <p class="port-desc">
- {{port.portfolioData[2].desc}}
+ {{port.portfolioData[5].desc}}
 <span>click the speaker icon to toggle sound</span>
 </p>
 
 <div class="icon-container">
-  <div class="inner-box" ng-if="port.portfolioData[2].codedrops">
-    <a href="{{port.portfolioData[2].codedrops}}" target="_blank" class="icon-links icon-link"></a>
+  <div class="inner-box" ng-if="port.portfolioData[5].codedrops">
+    <a href="{{port.portfolioData[5].codedrops}}" target="_blank" class="icon-links icon-link"></a>
     <h6>featured on codrops</h6>
   </div>
   <div class="inner-box">
-    <a href="{{port.portfolioData[2].codepen}}" target="_blank" class="icon-links icon-codepen"></a>
+    <a href="{{port.portfolioData[5].codepen}}" target="_blank" class="icon-links icon-codepen"></a>
     <h6>view on codepen</h6>
   </div>
   <div class="inner-box">
-    <a class="icon-links icon-github" href="{{port.portfolioData[2].github}}" target="_blank"></a>
+    <a class="icon-links icon-github" href="{{port.portfolioData[5].github}}" target="_blank"></a>
     <h6>view on github</h6>
   </div>
 </div>

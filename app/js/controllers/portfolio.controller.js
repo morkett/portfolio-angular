@@ -23,6 +23,15 @@ function PortfolioController($scope, $location, $anchorScroll){
       codedrops: 'https://tympanus.net/codrops/collective/collective/'
     },
     {
+      title: 'Sketch',
+      img: '/port-main/sketch.png',
+      anchor: 'sketch',
+      tags: ['Canvas', 'CSS', 'JS'],
+      desc: 'This canvas project is influenced by Microsoft Paint & Photoshop. It\'s intended use is to allow the user to draw on the canvas, with an array of tools such as background fill, spray can, paint brush. The tools all have opacity and size options. The Save and Delete tools allow the user to save and delete their image to/from local storage.',
+      github: 'https://github.com/morkett/sketch',
+      codepen: 'https://codepen.io/morkett/full/MvgWdL/'
+    },
+    {
       title: 'Your Movies',
       img: '/port-main/movie.png',
       anchor: 'movies',
@@ -32,13 +41,13 @@ function PortfolioController($scope, $location, $anchorScroll){
       site: 'https://david-sg-project-3.herokuapp.com/#/'
     },
     {
-      title: 'Realtime Clock',
-      img: '/port-main/clock-3_fdlcsg_c_scale,w_941.png',
-      anchor: 'realtime-clock',
-      tags: ['Realtime Clock', 'JS', 'Animation'],
-      desc: 'this project was originally created using html, css, js and jquery. css animations were used to transition any movements. Javascript and jquery were used to create a working clock based on the users local time. The project was rewritten in angular and has been used as a tutorial tool for teaching new students.',
-      codepen: 'https://codepen.io/morkett/full/GrgYpK/',
-      github: 'https://github.com/morkett/Realtime-Clock'
+      title: 'Record Player',
+      img: '/port-main/recordplayer.png',
+      anchor: 'record-player',
+      tags: ['Music Player','AngularJs', 'JS', 'Animation'],
+      desc: 'this project is a prototype of a working record player and was originally created using html, css, js and jquery. css animations were used to transition any movements. The project was refactored to work using angular resulting in jquery being removed from the code.',
+      codepen: 'https://codepen.io/morkett/full/oBdadK/',
+      github: 'https://github.com/morkett/Record-Player'
     },
     {
       title: 'Space Shooter Game',
@@ -50,13 +59,13 @@ function PortfolioController($scope, $location, $anchorScroll){
       site: 'https://dcorkett-sg-project-1.herokuapp.com/app/'
     },
     {
-      title: 'Record Player',
-      img: '/port-main/recordplayer.png',
-      anchor: 'record-player',
-      tags: ['Music Player','AngularJs', 'JS', 'Animation'],
-      desc: 'this project is a prototype of a working record player and was originally created using html, css, js and jquery. css animations were used to transition any movements. The project was refactored to work using angular resulting in jquery being removed from the code.',
-      codepen: 'https://codepen.io/morkett/full/oBdadK/',
-      github: 'https://github.com/morkett/Record-Player'
+      title: 'Realtime Clock',
+      img: '/port-main/clock-3_fdlcsg_c_scale,w_941.png',
+      anchor: 'realtime-clock',
+      tags: ['Realtime Clock', 'JS', 'Animation'],
+      desc: 'this project was originally created using html, css, js and jquery. css animations were used to transition any movements. Javascript and jquery were used to create a working clock based on the users local time. The project was rewritten in angular and has been used as a tutorial tool for teaching new students.',
+      codepen: 'https://codepen.io/morkett/full/GrgYpK/',
+      github: 'https://github.com/morkett/Realtime-Clock'
     },
     {
       title: 'Down To Earth',
