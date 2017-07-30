@@ -23,6 +23,15 @@ function PortfolioController($scope, $location, $anchorScroll){
       codedrops: 'https://tympanus.net/codrops/collective/collective/'
     },
     {
+      title: 'Sketch',
+      img: '/port-main/sketch.png',
+      anchor: 'sketch',
+      tags: ['Canvas', 'CSS', 'JS'],
+      desc: 'This canvas project is influenced by Microsoft Paint & Photoshop. It\'s intended use is to allow the user to draw on the canvas, with an array of tools such as background fill, spray can, paint brush. The tools all have opacity and size options. The Save and Delete tools allow the user to save and delete their image to/from local storage.',
+      github: 'https://github.com/morkett/sketch',
+      codepen: 'https://codepen.io/morkett/full/MvgWdL/'
+    },
+    {
       title: 'Your Movies',
       img: '/port-main/movie.png',
       anchor: 'movies',
